@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essence Coffee - Premium Artisan Coffee Experience</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="coffee-style.css" />
+  </head>
+  <body>
+    <!-- Floating Coffee Beans Animation -->
+    <div class="coffee-beans-bg">
+      <div class="bean bean-1"></div>
+      <div class="bean bean-2"></div>
+      <div class="bean bean-3"></div>
+      <div class="bean bean-4"></div>
+      <div class="bean bean-5"></div>
+      <div class="bean bean-6"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <div class="logo-container">
+            <i class="fas fa-mug-hot"></i>
+            <span class="brand-text">Essence</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Visit Us</a>
+            </li>
+          </ul>
+          <a href="#reservation" class="btn btn-primary ms-lg-3"
+            >Reserve Table</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <span class="hero-subtitle animate-fade-in"
+                >Premium Artisan Coffee</span
+              >
+              <h1 class="hero-title animate-slide-up">
+                Where Every<br />
+                <span class="highlight">Sip Tells</span><br />
+                a Story
+              </h1>
+              <p class="hero-description animate-fade-in-delay">
+                Handcrafted perfection in every cup. From bean to brew, we bring
+                you an unforgettable coffee experience.
+              </p>
+              <div class="hero-cta animate-fade-in-delay-2">
+                <a href="#menu" class="btn btn-primary btn-lg me-3"
+                  >Explore Menu</a
+                >
+                <a href="#story" class="btn btn-outline-light btn-lg">
+                  <i class="fas fa-play-circle me-2"></i>Watch Story
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-container">
+              <!-- <div class="coffee-cup-animation">
+                <div class="cup">
+                  <div class="steam steam-1"></div>
+                  <div class="steam steam-2"></div>
+                  <div class="steam steam-3"></div>
+                </div> -->
+                <video id="videos" autoplay muted loop playsinline src="./images/video1.mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3 class="stat-number" data-target="15">0</h3>
+              <p class="stat-label">Awards Won</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fas fa-coffee"></i>
+              </div>
+              <h3 class="stat-number" data-target="50000">0</h3>
+              <p class="stat-label">Cups Served</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="stat-number" data-target="10000">0</h3>
+              <p class="stat-label">Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3 class="stat-number" data-target="25">0</h3>
+              <p class="stat-label">Origin Countries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="story-image-grid">
+              <div class="image-box box-1">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-seedling"></i> -->
+                  <img
+                    src="https://i.pinimg.com/736x/14/94/65/1494652c76a28f99dce3f7927957ee03.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="image-box box-2">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-leaf"></i> -->
+                  <img
+                    src="https://media.istockphoto.com/id/1199467344/photo/cup-of-coffee-with-heart-shape-smoke-and-coffee-beans-on-burlap-sack-on-old-wooden-background.jpg?s=612x612&w=0&k=20&c=HlfoLXfootCBL2jiORIrqax1IS7Qf3xoQ-OAy1Iareo="
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="story-badge">
+                <div class="badge-content">
+                  <span class="badge-text">Since</span>
+                  <span class="badge-year">2010</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="story-content">
+              <span class="section-subtitle">Our Story</span>
+              <h2 class="section-title">
+                Crafted with Passion,<br />Served with Love
+              </h2>
+              <p class="story-text">
+                Our journey began in the misty mountains of Ethiopia, where we
+                discovered the art of perfect coffee roasting. Each bean is
+                carefully selected from sustainable farms, ensuring not just
+                exceptional taste, but also a positive impact on our planet.
+              </p>
+              <p class="story-text">
+                We believe coffee is more than a beverage—it's a moment of
+                connection, a ritual of comfort, and an experience worth
+                savoring. Every cup we serve carries this philosophy.
+              </p>
+              <div class="story-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>100% Organic Beans</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Fair Trade Certified</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Expertly Roasted Daily</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">Our Menu</span>
+          <h2 class="section-title">Signature Blends</h2>
+          <p class="section-description">
+            Carefully curated selections from around the world
+          </p>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-category="all">All</button>
+          <button class="menu-tab" data-category="hot">Hot Coffee</button>
+          <button class="menu-tab" data-category="cold">Cold Brew</button>
+          <button class="menu-tab" data-category="specialty">Specialty</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="row g-4 menu-grid">
+          <!-- Hot Coffee Items -->
+          <div class="col-lg-4 col-md-6 menu-item" data-category="hot">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-coffee"></i> -->
+                  <img
+                    src="https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe04-500x500.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="menu-badge">Popular</span>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Espresso Classico</h3>
+                  <span class="menu-card-price">$4.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Rich, bold Italian espresso with notes of dark chocolate and
+                  caramel
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Strong</span>
+                  <span class="tag">Classic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="hot">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-mug-hot"></i> -->
+                  <img
+                    src="https://img.freepik.com/free-photo/3d-cartoon-coffee-cup_23-2151751970.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Cappuccino Deluxe</h3>
+                  <span class="menu-card-price">$5.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Silky microfoam, double shot espresso, finished with cocoa
+                  dust
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Creamy</span>
+                  <span class="tag">Balanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="hot">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-fire"></i> -->
+                  <img
+                    src="https://img.freepik.com/free-photo/front-view-coffee-along-with-cinnamon-coffee-seeds-brown-floor_140725-14374.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Spiced Mocha</h3>
+                  <span class="menu-card-price">$6.00</span>
+                </div>
+                <p class="menu-card-description">
+                  Dark chocolate, cinnamon, and cayenne pepper with steamed milk
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Sweet</span>
+                  <span class="tag">Spicy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cold Brew Items -->
+          <div class="col-lg-4 col-md-6 menu-item" data-category="cold">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-glass-whiskey"></i> -->
+                  <img
+                    src="https://t3.ftcdn.net/jpg/17/63/93/60/360_F_1763936052_HOSlbMRmK9YZ9bzVBlaINUlloyWo9rsS.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="menu-badge">New</span>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Nitro Cold Brew</h3>
+                  <span class="menu-card-price">$5.00</span>
+                </div>
+                <p class="menu-card-description">
+                  Nitrogen-infused cold brew with velvety cascading bubbles
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Smooth</span>
+                  <span class="tag">Refreshing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="cold">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-snowflake"></i> -->
+                  <img
+                    src="https://media.istockphoto.com/id/2206851242/photo/delicious-sweet-affogato-coffee-with-creamy-ice-cream-in-a-cup-on-the-table.jpg?s=612x612&w=0&k=20&c=9KD-mS94dyIw9C-4E1OeAmoShH1ov_3jUiJCMMimmxM="
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Vanilla Iced Latte</h3>
+                  <span class="menu-card-price">$5.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Madagascar vanilla, espresso, and milk over ice
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Sweet</span>
+                  <span class="tag">Iced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="cold">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-lemon"></i> -->
+                  <img
+                    src="https://media.istockphoto.com/id/1209718260/photo/cold-brew-coffee-with-milk-and-ice-cubes-in-glass.jpg?s=612x612&w=0&k=20&c=ZJRnsNhnEwHPvt6-EsU2dJmNhi2hmdFq-_w56YbR648="
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Citrus Cold Brew</h3>
+                  <span class="menu-card-price">$6.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Cold brew infused with orange and bergamot essence
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Fruity</span>
+                  <span class="tag">Unique</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specialty Items -->
+          <div class="col-lg-4 col-md-6 menu-item" data-category="specialty">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-star"></i> -->
+                  <img
+                    src="https://thumbs.dreamstime.com/b/warm-cup-coffee-sits-amid-blooming-lavender-fields-sunset-showcasing-nature-s-beauty-lavender-fields-cup-coffee-373772738.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="menu-badge">Chef's Choice</span>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Honey Lavender Latte</h3>
+                  <span class="menu-card-price">$7.00</span>
+                </div>
+                <p class="menu-card-description">
+                  Organic honey, dried lavender, espresso, and oat milk
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Floral</span>
+                  <span class="tag">Premium</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="specialty">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-crown"></i> -->
+                  <img
+                    src="https://media.istockphoto.com/id/1207314265/photo/closeup-view-of-turmeric-latte-cup-on-a-textured-dark-background.jpg?s=612x612&w=0&k=20&c=qikzaGqyU1bFm09CMRlCEJqX8cY4nGs1pV2Q7NVqfWs="
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Golden Turmeric</h3>
+                  <span class="menu-card-price">$6.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Turmeric, ginger, espresso, coconut milk, and black pepper
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Wellness</span>
+                  <span class="tag">Exotic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item" data-category="specialty">
+            <div class="menu-card">
+              <div class="menu-card-image">
+                <div class="image-placeholder">
+                  <!-- <i class="fas fa-gem"></i> -->
+                  <img
+                    src="https://cdn-fastly.foodtalkdaily.com/media/2020/10/31/6271824/cardamom-rose-coffee.jpg?size=720x845&nocrop=1"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3 class="menu-card-title">Rose Cardamom</h3>
+                  <span class="menu-card-price">$7.50</span>
+                </div>
+                <p class="menu-card-description">
+                  Turkish coffee with rose water, cardamom, and gold leaf
+                </p>
+                <div class="menu-card-tags">
+                  <span class="tag">Luxury</span>
+                  <span class="tag">Aromatic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">The Process</span>
+          <h2 class="section-title">From Bean to Cup</h2>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <h3 class="step-title">Sourcing</h3>
+              <p class="step-description">
+                We travel to origin countries, building relationships with
+                farmers and selecting the finest beans from sustainable farms.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="fas fa-fire-alt"></i>
+              </div>
+              <h3 class="step-title">Roasting</h3>
+              <p class="step-description">
+                Small-batch roasting brings out unique flavor profiles. Our
+                master roasters craft each batch with precision.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="fas fa-mortar-pestle"></i>
+              </div>
+              <h3 class="step-title">Grinding</h3>
+              <p class="step-description">
+                Freshly ground to order, ensuring maximum aroma and flavor in
+                every cup we serve.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="fas fa-coffee"></i>
+              </div>
+              <h3 class="step-title">Brewing</h3>
+              <p class="step-description">
+                Artisan brewing techniques and expert baristas create the
+                perfect cup, every single time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">Testimonials</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The best coffee experience in the city! The attention to detail
+                and the quality of beans is unmatched. I'm a regular now."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Girish Thakur</h4>
+                  <p class="author-role">Food Blogger</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Every sip is an experience. The baristas are true artists, and
+                the ambiance is perfect for both work and relaxation."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Ashwini Goswami</h4>
+                  <p class="author-role">Entrepreneur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "I've traveled the world for coffee, and Essence ranks among the
+                very best. Their specialty drinks are innovative and delicious."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Sara Tendulkar</h4>
+                  <p class="author-role">Coffee Enthusiast</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="contact-content">
+              <span class="section-subtitle">Visit Us</span>
+              <h2 class="section-title">
+                Find Your Perfect<br />Coffee Moment
+              </h2>
+              <p class="contact-description">
+                Stop by our café and experience the art of coffee making. Our
+                doors are open, and our baristas are ready to craft your perfect
+                cup.
+              </p>
+
+              <div class="contact-info">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Location</h4>
+                    <p>Oven Express<br />Punjab, Kapurthala 1444001</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Hours</h4>
+                    <p>
+                      Mon - Fri: 7:00 AM - 8:00 PM<br />Sat - Sun: 8:00 AM -
+                      9:00 PM
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Contact</h4>
+                    <p>+91 83427-48092<br />coffeewala@essencecoffee.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id="reservation" class="reservation-form">
+              <h3 class="form-title">Reserve Your Table</h3>
+              <form id="reservationForm">
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <input type="date" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="time" class="form-control" required />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <select class="form-select">
+                    <option selected>Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Special Requests (Optional)"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 btn-lg">
+                  Complete Reservation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <div class="footer-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Essence</span>
+              </div>
+              <p class="footer-text">
+                Crafting memorable coffee experiences since 2010. Every cup
+                tells a story, every sip creates a moment.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4 class="footer-title">Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h4 class="footer-title">Services</h4>
+              <ul>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Private Events</a></li>
+                <li><a href="#">Coffee Classes</a></li>
+                <li><a href="#">Wholesale</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-newsletter">
+              <h4 class="footer-title">Newsletter</h4>
+              <p class="newsletter-text">
+                Subscribe for exclusive offers and updates
+              </p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Essence Coffee. All rights reserved. Made with
+            <i class="fas fa-heart"></i> and coffee.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="coffee-script.js"></script>
+  </body>
+</html>
